@@ -12,35 +12,56 @@
 
 <body>
 
-  <h1>NuNative</h1>
 
-    <div class="navbar">
-      <a href="./index.html">Home</a>
-      <a href="./post.html">Blog</a>
-      <div class="dropdown">
-        <button class="dropbtn">Dropdown
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+    <video autoplay muted loop src="./images/header-video.mov">
+    </video>
+
+    <div class="panel-group" id="accordion">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+              > NuNative <
+            </a>
+          </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse">
+          <div class="panel-body">
+            <br>
+            <h2> About </h2>
+            <br>
+            <p> Here we can write a few lines about NuNative. </p>
+            <br>
+            <h2> Blog </h2>
+              <br>
+              <div class="container">
+
+              <div class="img1">
+                <a href="./post.html">
+                <img src="./images/aloevera.jpg" alt="Aloe vera image" width="200px">
+                </a>
+              </div>
+              <div class="img2">
+                <img src="./images/moringaoil.jpg" alt="Moringa oil image" width="200px">
+              </div>
+              <div class="img3">
+                <img src="./images/sheabutter.jpg" alt="Shea butter image" width="200px">
+              </div>
+            </div>
+
+              </div>
+
+
+          </div>
         </div>
       </div>
     </div>
-  <br>
-    <div class="moving-gallery">
-      <div class="img1">
-        <img src="./images/aloevera.jpg" alt="Aloe vera image" width="200px">
-      </div>
-      <div class="img2">
-        <img src="./images/moringaoil.jpg" alt="Moringa oil image" width="200px">
-      </div>
-      <div class="img3">
-        <img src="./images/sheabutter.jpg" alt="Shea butter image" width="200px">
-      </div>
-    </div>
+
 
 <script src="js/scripts.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </body>
 </html>
