@@ -19,18 +19,3 @@ $('#collapseOne').on('hide.bs.collapse', function () {
         backgroundColor: "#00B4FF"
     }, 500);
 })
-
-function play() {
-       var audio = document.getElementById('music');
-       if (audio.paused) {
-           audio.play();
-           $('#play').removeClass('fa-play-circle')
-           $('#play').addClass('fa-pause-circle')
-       }
-       else{
-           audio.pause();
-           audio.currentTime = 0
-           $('#play').addClass('fa-play-circle')
-           $('#play').removeClass('fa-pause-circle')
-       }
-   }
