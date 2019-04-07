@@ -8,14 +8,31 @@
 
   <link rel="stylesheet" href="./CSS/index-styles.css">
 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 
 <body>
 
-  <video autoplay muted loop src="./images/header-video.mov">
+  <video autoplay muted loop src="./images/header-video.mp4">
   </video>
+
+  <audio id="music" autoplay>
+  <source src="./images/silent-sunrise.mp3" type="audio/mpeg">
+  </audio>
+
+  <button type="button" id="button_play" class="btn" onclick='buttonPlayPress()'>
+      <i class="fas fa-play-circle"></i>
+    </button>
+
+  <button type="button" id="button_pause" class="btn" onclick='buttonPausePress()'>
+      <i class="fas fa-pause-circle"></i>
+    </button>
+
+
+
 
   <div class="panel-group" id="accordion">
     <div class="panel panel-default">
@@ -50,8 +67,45 @@
               <img src="./images/sheabutter.jpg" alt="Shea butter image" width="200px">
             </div>
           </div>
+
+          <h2> Say Hi! </h2>
+          <br>
+            <div class="row">
+              <div class="column">
+
+
+              <large class="form-text text-muted">Join our mailing list.</large>
+                <form>
+                  <div class="form-group">
+                    <input type="name" class="form-control" id="exampleInputName1" placeholder="Name">
+                  </div>
+                  <div class="form-group">
+
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                  </div>
+                  <button id="submit" type="button"> <i class="fas fa-paper-plane"></i> Submit </button>
+                </form>
+
+            </div>
+
+
+            <div class="column">
+              <large class="form-text text-muted">Follow us on social media.</large>
+                  <br>
+                <button class="socialmedia" type="button"> <i class="fab fa-instagram"></i> Instagram </button>
+                  <br>
+                  <br>
+                <button class="socialmedia" type="button"> <i class="fab fa-facebook"></i> Facebook </button>
+                  <br>
+                  <br>
+                <button class="socialmedia" type="button"> <i class="fab fa-twitter"></i> Twitter </button>
+            </div>
+          </div>
+
         </div>
       </div>
+
+
 
     </div>
   </div>
